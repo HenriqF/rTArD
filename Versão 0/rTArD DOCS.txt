@@ -1,0 +1,100 @@
+palavras:
+
+	if    |caso              ok
+	else  |senrolar          ok
+	elif  |oucpa             ok
+
+	while |enquanto
+	for   |para
+
+	def   |sejaisso          ok
+	call  |ligueja0800       ok
+	return|slktofora         ok
+
+	print |deixeclaro        ok
+
+	end   |chegaporra        ok
+
+variaveis e outros:
+
+    str   |#                 ok
+	int   |$                 ok
+	true  |vdd               ok
+	false |fake              ok
+
+	declarar|queseja         ok
+
+operações :
+
+	[1 + 1] ou [@ + @]
+	[1 > 1] ou [@ > @] | true or false
+	Sempre por um espaço entre membros.
+
+	Exemplos de operações válidas:
+
+		[( @a + @b + @c ) * 2]
+		[2 + 5 * 3]
+		[( @a + @b + @c ) == ( @a + @b + @c )]
+
+	Exemplo de operação inválidas:
+
+		[@b+@a]
+
+Regras básicas:
+	Ao fim de uma linha, põe se uma virgula.
+	Após cada palavra chave, põe-se um espaco.
+	Em casos de palavra chave solitária (e.x.: slktofora ou chegaporra), põe-se um ponto.
+	Sem pular linhas. Pulos são para trouxas. (mas se for pular, não deixe-a em branco. Ponha ou um espaço ou um ponto.)
+
+Declarando variaveis:
+	usa-se a seguinte estrutura para declarar uma variavel:
+
+		queseja NOME algo,
+
+	para declarar um número, substitui-se algo por "$numero", exemplo:          queseja grana $20,
+	para declarar um texto, substitui-se algo por "#texto", exemplo:            queseja parmesao #prasempre,
+	para declarar uma booleana, substitui-se algo por "vdd" ou "fake", exemplo: queseja mentiras vdd,
+
+Imprimindo coisas:
+	para imprimir o valor de uma variavel, use:   deixeclaro @variavel,
+	para imprimir uma operação, use:              deixeclaro [@variavel + @variavel],
+	para imprimir algo fora de uma variavel, use: deixeclaro algo,
+	para pular linha, use:                        deixeclaro ,
+
+
+Declarando e chamando funções:
+	para declarar uma função, é necessário seguir a seguinte estrutura:
+	variaveis são e sempre serão globais. Uma função pode usar qualquer variavel, e código exterior pode usar variaveis declaradas dentro de uma funcao.
+
+	sejaisso nomefuncao,
+	CÓDIGO,
+	slktofora,             
+
+Usando condicionais:
+	IF
+		para criar uma condicional if, é necessário seguir a seguinte estrutura:
+
+		caso [@variavel == @variavel]{
+		}
+
+		perceba que a operação "[]" deve ser uma que retorna um valor booleano.
+
+	ELSE:
+		para criar uma condicional else, é necessário seguir a seguinte estrutura:
+
+		senrolar {	
+		}
+
+	ELIF:
+		para criar uma condicional elif, é necessário seguir a seguinte estrutura:
+
+		oucpa [@variavel == @variavel]{	
+		}
+
+		perceba que a operação "[]" deve ser uma que retorna um valor booleano.
+
+	Em cada um deses casos, o código a ser executado caso a condicional retorne verdadeiro deve ficar entre os braquetes:
+
+		caso [@variavel == @variavel]{
+		deixeclaro @variavel,
+		}
