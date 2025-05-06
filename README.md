@@ -4,14 +4,14 @@ Ela é completamente improvisada, todo seu funcionamento é baseado em minhas ob
 <br><br>
 Adicionalmente, também por diversão, decidi deixa-lá com uma aparência ridícula, como no exemplo:
 
-                            python | C        | rTArD
-                            =======|==========|============
-                            if     | if       | caso               
-                            else   | else     | senrolar          
-                            elif   | else if  | oucpa             
-                                   |          |
-                            while  | while    | enquanto          
-                            for    | for      | para              
-                                   |          |
-                            print  | printf   | deixeclaro        
-                            input  | scanf    | receba            
+    python | C        | rTArD
+    =======|==========|============
+    if     | if       | caso               
+    else   | else     | senrolar          
+    elif   | else if  | oucpa             
+           |          |
+    while  | while    | enquanto          
+    for    | for      | para              
+           |          |
+    print  | printf   | deixeclaro        
+    input  | scanf    | receba            
