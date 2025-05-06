@@ -1,0 +1,16 @@
+!.
+enquanto [vdd]{
+receba @alberto Numero1: ,
+receba @valeria Numero2: ,
+queseja @maior $0,
+.
+caso [@alberto > @valeria]{
+queseja @maior [@alberto],
+}
+senrolar {
+queseja @maior [@valeria],
+}
+deixeclaro @maior,
+deixeclaro ,
+}
+chegaporra.

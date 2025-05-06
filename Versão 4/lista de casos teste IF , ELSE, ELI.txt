@@ -1,0 +1,389 @@
+lista de casos teste IF , ELSE, ELIF:
+
+caso [fake]{
+deixeclaro a,
+caso [vdd]{
+deixeclaro b,
+caso [fake]{
+deixeclaro c,
+}
+}
+senrolar {
+deixeclaro d,
+}
+}
+senrolar {
+deixeclaro e,
+}
+chegaporra.
+=========================== RESULTADO : e VERIFICADO
+
+caso [vdd]{
+deixeclaro a,
+caso [fake]{
+deixeclaro b,
+}
+oucpa [fake]{
+deixeclaro c,
+}
+senrolar {
+deixeclaro d,
+}
+}
+oucpa [vdd]{
+deixeclaro e,
+}
+senrolar {
+deixeclaro f,
+}
+chegaporra.
+
+============================ RESULTADO: ad VERIFICADO
+
+caso [fake]{
+deixeclaro a,
+caso [vdd]{
+deixeclaro b,
+}
+}
+oucpa [fake]{
+deixeclaro c,
+}
+senrolar {
+deixeclaro d,
+}
+chegaporra.
+
+================================ RESULTADO: d VERIFICADO
+
+caso [vdd]{
+deixeclaro a,
+caso [vdd]{
+deixeclaro b,
+caso [fake]{
+deixeclaro c,
+}
+senrolar {
+deixeclaro d,
+}
+}
+senrolar {
+deixeclaro e,
+}
+}
+senrolar {
+deixeclaro f,
+}
+chegaporra.
+
+================================= RESULTADO: abd VERIFICADO
+
+caso [vdd]{
+deixeclaro a,
+caso [fake]{
+deixeclaro b,
+caso [fake]{
+deixeclaro c,
+}
+senrolar {
+deixeclaro d,
+}
+}
+senrolar {
+deixeclaro e,
+}
+}
+senrolar {
+deixeclaro f,
+}
+chegaporra.
+
+====================================== RESULTADO: ae VERIFICADO
+
+caso [fake]{
+deixeclaro a,
+}
+oucpa [fake]{
+deixeclaro b,
+}
+oucpa [vdd]{
+deixeclaro c,
+}
+senrolar {
+deixeclaro d,
+}
+chegaporra.
+
+================================== RESULTADO: c VERIFICADO
+
+caso [fake]{
+deixeclaro a,
+caso [vdd]{
+deixeclaro b,
+}
+}
+oucpa [fake]{
+deixeclaro c,
+}
+oucpa [fake]{
+deixeclaro d,
+}
+senrolar {
+deixeclaro e,
+}
+chegaporra.
+
+=====================================RESULTADO: e VERIFICADO
+
+caso [fake]{
+deixeclaro a,
+}
+oucpa [fake]{
+deixeclaro b,
+}
+oucpa [fake]{
+deixeclaro c,
+}
+oucpa [vdd]{
+deixeclaro d,
+}
+senrolar {
+deixeclaro e,
+}
+chegaporra.
+
+===================================== RESULTADO: d VERIFICADO
+
+caso [fake]{
+deixeclaro A,
+caso [fake]{
+deixeclaro B,
+}
+oucpa [vdd]{
+deixeclaro C,
+caso [fake]{
+deixeclaro D,
+}
+senrolar {
+deixeclaro E,
+}
+}
+senrolar {
+deixeclaro F,
+}
+}
+oucpa [vdd]{
+deixeclaro G,
+caso [vdd]{
+deixeclaro H,
+caso [fake]{
+deixeclaro I,
+}
+oucpa [vdd]{
+deixeclaro J,
+caso [vdd]{
+deixeclaro K,
+}
+senrolar {
+deixeclaro L,
+}
+}
+senrolar {
+deixeclaro M,
+}
+}
+senrolar {
+deixeclaro N,
+}
+}
+senrolar {
+deixeclaro O,
+caso [fake]{
+deixeclaro P,
+}
+oucpa [vdd]{
+deixeclaro Q,
+}
+senrolar {
+deixeclaro R,
+}
+}
+chegaporra.
+
+============================ Resultado: GHJK verificado
+
+caso [vdd]{
+deixeclaro A,
+caso [fake]{
+deixeclaro B,
+caso [vdd]{
+deixeclaro C,
+}
+senrolar {
+deixeclaro D,
+}
+}
+oucpa [vdd]{
+deixeclaro E,
+caso [fake]{
+deixeclaro F,
+}
+oucpa [vdd]{
+deixeclaro G,
+caso [fake]{
+deixeclaro H,
+}
+oucpa [vdd]{
+deixeclaro I,
+}
+senrolar {
+deixeclaro J,
+}
+}
+senrolar {
+deixeclaro K,
+}
+}
+senrolar {
+deixeclaro L,
+}
+}
+oucpa [fake]{
+deixeclaro M,
+}
+senrolar {
+deixeclaro N,
+caso [fake]{
+deixeclaro O,
+}
+oucpa [fake]{
+deixeclaro P,
+}
+senrolar {
+deixeclaro Q,
+}
+}
+chegaporra.
+
+================================ RESULTADO: AEGI verificado
+
+
+caso [fake]{
+deixeclaro A,
+}
+senrolar {
+deixeclaro B,
+}
+chegaporra.
+
+=================================== RESULTADO: B verificado
+
+caso [fake]{
+deixeclaro A,
+}
+oucpa [fake]{
+deixeclaro B,
+}
+oucpa [vdd]{
+deixeclaro C,
+}
+senrolar {
+deixeclaro D,
+}
+chegaporra.
+
+================================== RESULTADO: C verificado
+
+caso [fake]{
+deixeclaro A,
+}
+senrolar {
+deixeclaro B,
+caso [fake]{
+deixeclaro C,
+}
+senrolar {
+deixeclaro D,
+}
+}
+chegaporra.
+
+=================================== RESULTADO: BD verificado
+
+caso [vdd]{
+deixeclaro A,
+caso [fake]{
+deixeclaro B,
+}
+oucpa [vdd]{
+deixeclaro C,
+}
+senrolar {
+deixeclaro D,
+}
+}
+senrolar {
+deixeclaro E,
+}
+chegaporra.
+
+=============================== RESULTADO: AC verificado
+
+caso [vdd]{
+deixeclaro A,
+caso [fake]{
+deixeclaro B,
+}
+oucpa [fake]{
+deixeclaro C,
+}
+oucpa [vdd]{
+deixeclaro D,
+caso [fake]{
+deixeclaro E,
+}
+senrolar {
+deixeclaro F,
+}
+}
+senrolar {
+deixeclaro G,
+}
+}
+senrolar {
+deixeclaro H,
+}
+chegaporra.
+
+================================= RESULTADO: ADF verificado
+
+caso [fake]{
+deixeclaro a,
+caso [vdd]{
+deixeclaro b,
+caso [vdd]{
+deixeclaro c,
+}
+}
+}
+oucpa [fake]{
+deixeclaro wow,
+}
+senrolar {
+deixeclaro ERROR,
+}
+chegaporra.
+
+================================== RESULTADO: ERROR verificado
+
+caso [vdd]{
+caso [fake]{
+deixeclaro b,
+}
+}
+senrolar {
+deixeclaro a,
+}
+chegaporra.
+
+==================== Resultado: NADA verificado

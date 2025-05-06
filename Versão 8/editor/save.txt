@@ -1,0 +1,5 @@
+queseja @a $2000000,
+enquanto [@a > 0]{
+queseja @a [@a - 1],
+}
+chegaporra.

@@ -1,0 +1,4 @@
+queseja @lista <0;0;0;0;0;NICE;0;0>,
+queseja @lista<5> $0,
+deixeclaro @lista,
+chegaporra.

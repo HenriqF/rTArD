@@ -1,0 +1,15 @@
+receba @numero Numero: ,
+receba @base Base: ,
+queseja @resposta <>,
+enquanto [@numero > 0]{
+queseja @calculo [@numero % @base],
+queseja @atual <@calculo>,
+queseja @resposta [@resposta + @atual],
+queseja @numero [@numero // @base],
+}
+queseja @l !@resposta,
+queseja @l [@l - 1],
+para [0 até @l][@l @i -1]{
+deixeclaro [@resposta<@i>][# ],
+}
+chegaporra.

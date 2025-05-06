@@ -1,0 +1,34 @@
+queseja a $0,
+queseja b $1,
+queseja resposta $0,
+receba @c numero de fibonacci: ,
+.
+deixeclaro [@c],
+queseja c [@c -2],
+.
+sejaisso parar,
+caso [@c == 0]{
+deixeclaro  Numero de Fibonacci:  ,
+deixeclaro @resposta,
+dnvcaralho.
+}
+slktofora.
+.
+sejaisso fibb,
+queseja c [@c - 1],
+queseja a [@a + @b],
+queseja resposta [@a + @b],
+ligueja0800 parar,
+ligueja0800 fibb2,
+slktofora.
+.
+sejaisso fibb2,
+queseja c [@c - 1],
+queseja b [@a + @b],
+queseja resposta [@a + @b],
+ligueja0800 parar,
+ligueja0800 fibb,
+slktofora.
+.
+ligueja0800 fibb,
+.

@@ -1,0 +1,174 @@
+palavras-chave:
+
+	if     | caso               
+	else   | senrolar          
+	elif   | oucpa             
+
+	while  | enquanto          
+	for    | para              
+
+	def    | sejaisso          
+	call   | ligueja0800       
+	return | slktofora         
+
+	print  | deixeclaro        
+	input  | receba            
+
+	end     | chegaporra  
+	restart | dnvcaralho  
+
+	declarar | queseja 
+		str   |#                 
+		int   |$                 
+		true  |vdd               
+		false |fake    
+
+operações (pacotes):
+
+	[1 + 1] ou [@variavel + @variavel]   | resultado da operação
+	[1 > 1] ou [@variavel > @variavel]   | true or false
+	[vdd] ou [fake]                      | true or false
+	["texto" == "texto"]                 | true or false
+	Sempre por um espaço entre membros:
+		Exemplos de operações válidas:
+
+			[( @a + @b + @c ) * 2]
+			[2 + 5 * 3]
+			[( @a + @b + @c ) == ( @a + @b + @c )]
+
+		Exemplo de operação inválidas:
+
+			[@b+@a]
+
+Regras básicas:
+	Ao fim de uma linha, põe se uma virgula.
+		Contudo, em casos de palavra chave solitária (e.x.: slktofora ou chegaporra), põe-se um ponto.
+	Após cada palavra chave, põe-se um espaco.
+	Não é permitido deixar uma linha em branco. Para obter um resultado similar, use um ponto. Exemplo:
+
+		queseja @a #legal,
+		.
+		deixeclaro @a,
+		chegaporra.
+
+	Para criar um comentário, use a seguinte estrutura:
+
+		/#c/ comentário /#c/,
+
+	exemplos de uso correto:
+
+		sejaisso parar, /#c/ essa é a função que detecta se o programa termina /#c/,
+		slktofora.
+
+		queseja @c [@c - 1],
+		/#c/ essa é a função que detecta se o programa termina /#c/,
+		queseja @b [@a + @b],
+
+Declarando variaveis:
+	usa-se a seguinte estrutura para declarar uma variavel:
+
+		queseja @NOME algo,
+
+	para declarar um número, substitui-se algo por "$numero", exemplo:          queseja @grana $20,
+	para declarar um texto, substitui-se algo por "#texto", exemplo:            queseja @parmesao #prasempre,
+	para declarar uma booleana, substitui-se algo por "vdd" ou "fake", exemplo: queseja @mentiras vdd,
+
+Imprimindo coisas e obtendo input:
+	para imprimir o valor de uma variavel, use:   deixeclaro @variavel,
+	para imprimir uma operação, use:              deixeclaro [@variavel + @variavel],
+	para imprimir algo fora de uma variavel, use: deixeclaro algo,
+	para pular linha, use:                        deixeclaro ,
+
+	para obter input, use:                        receba @variavel algo,
+	note que a variavel usada para colher input não precisa ser antes declarada.
+
+Declarando e chamando funções:
+	para declarar uma função, é necessário seguir a seguinte estrutura:
+	variaveis são e sempre serão globais. Uma função pode usar qualquer variavel, e código exterior pode usar variaveis declaradas dentro de uma funcao.
+
+	sejaisso nomefuncao,
+	CÓDIGO,
+	slktofora,             
+
+Usando condicionais:
+	IF
+		para criar uma condicional if, é necessário seguir a seguinte estrutura:
+
+		caso [@variavel == @variavel]{
+		}
+
+		perceba que a operação "[]" deve ser uma que retorna um valor booleano.
+
+	ELSE:
+		para criar uma condicional else, é necessário seguir a seguinte estrutura:
+
+		senrolar {	
+		}
+
+	ELIF:
+		para criar uma condicional elif, é necessário seguir a seguinte estrutura:
+
+		oucpa [@variavel == @variavel]{	
+		}
+
+		perceba que a operação "[]" deve ser uma que retorna um valor booleano.
+
+	Em cada um deses casos, o código a ser executado caso a condicional retorne verdadeiro deve ficar entre os braquetes:
+
+		caso [@variavel == @variavel]{
+		deixeclaro @variavel,
+		}
+
+Usando loops:
+	FOR:
+		para criar um loop for, é necessário seguir a seguinte estrutura:
+
+		para [@variavel até @variavel]{
+		}
+
+		é necessário declarar ambas as variaveis antes de usar o loop.
+		adicionalmente, o loop não altera o valor das variaveis usadas, apenas pega o valor absoluto da diferenca
+		das duas, o usando como guia. 
+
+		também pode-se substiuir o primeiro argumento por 0:
+
+		para [n até @variavel]{
+		}
+
+		ou
+
+		para[@variavel até n]{
+		}
+
+		ou
+
+		para [n até m]{
+		}
+
+		em todos esses casos, é pega a diferenca absoluta entre o primeiro e o segundo valor para executar o loop.
+	WHILE:
+		para criar um loop while, é necessário seguir a seuinte estrutura:
+
+		enquanto [@variavel == @variavel]{
+		}
+
+		enquanto o pacote retornar um valor booleano verdadeiro, o código dentro da estrutura será executado.
+
+Finalizando um script:
+	Para finalizar um script, basta escrever a seguinte linha:
+
+	chegaporra.
+
+	Para reiniciar um script do inicio, basta escrever a seguinte linha:
+
+	dnvcaralho.
+
+Debugging:
+	para obter as logs de informações de debugging, ponha "!." na primeira linha de código. Exemplo:
+
+	!.
+	queseja @a $20,
+	deixeclaro @a,
+	chegaporra.
+
+	note que as logs apenas apareceram depois de usar o comando "chegaporra."; "dnvcaralho." não as retornará.

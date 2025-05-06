@@ -1,0 +1,19 @@
+queseja @b $1,
+para [0 até 10][-1 @a + @b]{
+queseja @b [@b + @a],
+deixeclaro [@i][#\n],
+deixeclaro [@b][#\n],
+}
+chegaporra.
+
+
+isso funciona pq toda vez, @i recebe @i+@b e @b @i+@b.:
+
+queseja @a $0,
+queseja @b $1,
+para [0 até 20]{
+deixeclaro [@a][#\n][@b][#\n],
+queseja @a [@a + @b],
+queseja @b [@b + @a],
+}
+chegaporra.

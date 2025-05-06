@@ -1,0 +1,16 @@
+!?.
+receba @numero1 Numero1: ,
+receba @numero2 numero2: ,
+.
+caso [@numero2 > @numero1]{
+queseja @numero1 [@numero1 ^ @numero2],
+queseja @numero2 [@numero1 ^ @numero2],
+queseja @numero1 [@numero1 ^ @numero2],
+}
+.
+caso [@numero1 % @numero2 == 0]{
+deixeclaro é multiplo,
+chegaporra.
+}
+deixeclaro não e multiplo,
+chegaporra.

@@ -1,0 +1,13 @@
+receba @inicial Hora inicial: ,
+receba @final Hora final: ,
+caso [@inicial == @final]{
+queseja @total $24,
+}
+oucpa [@inicial < @final]{
+queseja @total [@final - @inicial],
+}
+senrolar {
+queseja @total [24 - [@inicial - @final]],
+}
+deixeclaro [#O jogo durou: ][@total][# Horas.],
+chegaporra.

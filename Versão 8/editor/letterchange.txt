@@ -1,0 +1,14 @@
+queseja @texto #wowquelegal,
+queseja @out #,
+queseja @l !@texto,
+para [0 até @l][-1 @i +1]{
+caso [@texto<@i> == "w"]{
+queseja @out [@out + "o"],
+}
+senrolar {
+queseja @out [@out + @texto<@i>],
+}
+}
+deixeclaro [@out],
+chegaporra.
+

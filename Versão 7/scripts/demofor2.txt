@@ -1,0 +1,6 @@
+queseja @b $1,
+para [0 até 11][-1 @i + @b]{
+queseja @b [@b + 1],
+deixeclaro [@i][#\n],
+}
+chegaporra.

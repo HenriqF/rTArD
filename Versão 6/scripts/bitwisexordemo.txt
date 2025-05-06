@@ -1,0 +1,14 @@
+queseja @a $5,
+queseja @b $3,
+.
+queseja @a [@a ^ @b],
+queseja @b [@a ^ @b],
+queseja @a [@a ^ @b],
+.
+deixeclaro A: ,
+deixeclaro @a,
+deixeclaro ,
+deixeclaro B: ,
+deixeclaro @b,
+.
+chegaporra.

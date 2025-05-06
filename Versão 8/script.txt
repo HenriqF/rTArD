@@ -1,0 +1,15 @@
+?.
+queseja @nums <65;92;99;89;63;99;22;40;71;33;73;81;63;6;39;12;38;18;51;13;16;22;87;54;60;34;85;66;61;63;76;44;54;43;94;2;27;20;67;14;72;86;13;91;13;26;83;42;34;57>,
+queseja @l !@nums,
+queseja @l [@l -1],
+para [0 até @l][0 @i + 1]{
+para [0 até @l][0 @j + 1]{
+caso [@nums<@j> > @nums<@i>]{
+queseja @nums<@i> [@nums<@i> ^ @nums<@j>],
+queseja @nums<@j> [@nums<@i> ^ @nums<@j>],
+queseja @nums<@i> [@nums<@i> ^ @nums<@j>],
+}
+}
+}
+deixeclaro [@nums][#\n],
+chegaporra.

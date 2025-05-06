@@ -1,0 +1,27 @@
+receba @Numero Checar: ,
+queseja @n [@Numero -1],
+queseja @i $1,/c/ oops kkk /c/
+.
+sejaisso falso,
+deixeclaro Esse numero nao e primo,
+dnvcaralho.
+slktofora.
+.
+sejaisso verdade,
+deixeclaro Esse numero é PRIMO!!,
+dnvcaralho.
+slktofora.
+.
+.
+.
+caso [@Numero <= 1]{
+ligueja0800 falso,
+}
+para [@i até @n]{
+caso [@Numero % @i == 0]{
+ligueja0800 falso,
+}
+queseja @i [@i + 1],
+}
+ligueja0800 verdade,
+chegaporra.

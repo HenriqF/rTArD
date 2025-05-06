@@ -1,0 +1,7 @@
+queseja @a $0,
+queseja @b $5,
+.
+para [0 até 5]{
+deixeclaro a,
+}
+chegaporra.

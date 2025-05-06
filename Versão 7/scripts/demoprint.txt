@@ -1,0 +1,5 @@
+queseja @a $20,
+queseja @b #incrivel,
+queseja @c <0;1;2>,
+deixeclaro [#istoé ][@b][# ][@c<2>][# ][@a],
+chegaporra.

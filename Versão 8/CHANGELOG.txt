@@ -1,0 +1,6 @@
+interpretador:
+    pegar comprimento de variavel com:  deixeclaro @var !@var2,
+
+editor:
+    adicionado sistema rustico de manuseamento de arquivos, autosave.
+    adicionado sistema rustico de control-z

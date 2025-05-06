@@ -1,0 +1,15 @@
+queseja @f <0;1>,
+queseja @i $0,
+para [0 até 2000]{
+caso [@i % 2 == 0]{
+queseja @f<0> [@f<0> + @f<1>],
+}
+senrolar {
+queseja @f<1> [@f<0> + @f<1>],
+}
+queseja @i [@i +1],
+}
+deixeclaro [@f<0>][#\n],
+deixeclaro [#===========\n],
+deixeclaro [@f<1>],
+chegaporra.

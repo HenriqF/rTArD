@@ -1,0 +1,16 @@
+queseja @c $0,
+para [0 até 1][0 @i +1]{
+para [0 até 1][0 @j +1]{
+para [0 até 1][0 @k +1]{
+para [0 até 1][0 @l +1]{
+para [0 até 1][0 @m +1]{
+para [0 até 1][0 @n +1]{
+deixeclaro [@i][# ][@j][# ][@k][# ][@l][# ][@m][# ][@n][# NUMERO:][@c][#\n],
+queseja @c [@c + 1],
+}
+}
+}
+}
+}
+}
+chegaporra.
