@@ -17,5 +17,5 @@ Adicionalmente, também por diversão, decidi deixa-lá com uma aparência ridí
     input  | scanf    | receba            
 
 
-Para usar o interpretador, escreva seu código no arquivo "script.txt" de qualquer versão.
+Para usar o interpretador (que mais se assemelha a um simulador), escreva seu código no arquivo "script.txt" de qualquer versão.
 Já no editor (que é de versões mais recentes), escreva o nome do arquivo na pequena caixa do canto superior esquerdo para salvar um código.
